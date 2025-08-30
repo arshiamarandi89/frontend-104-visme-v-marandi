@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ثبت‌نام</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      background: linear-gradient(135deg, #4caf50, #81c784);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .register-box {
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      text-align: right;
+      color: #444;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      margin-bottom: 15px;
+      transition: 0.3s;
+    }
+    input:focus {
+      border-color: #4caf50;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #4caf50;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #388e3c;
+    }
+    .extra {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .extra a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+    .extra a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-box">
+    <h1>📝 ثبت‌نام کاربر جدید</h1>
+    <form action="/register" method="post">
+      <label for="phone">شماره موبایل:</label>
+      <input type="tel" id="phone" name="phone" placeholder="0912..." required>
+
+      <label for="user_id">کد کاربری دلخواه:</label>
+      <input type="text" id="user_id" name="user_id" required>
+
+      <label for="password">رمز عبور:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">ثبت‌نام</button>
+    </form>
+    <div class="extra">
+      قبلاً حساب ساخته‌اید؟ <a href="/login">ورود کنید</a>
+    </div>
+  </div>
+</body>
+</html>

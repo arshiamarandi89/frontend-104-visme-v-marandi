@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منوی کتابدار</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      background: #fdfdfd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    .menu-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .btn {
+      padding: 14px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    .btn-add { background: #4caf50; color: white; }
+    .btn-add:hover { background: #45a049; }
+    .btn-loan { background: #2196f3; color: white; }
+    .btn-loan:hover { background: #1976d2; }
+    .btn-return { background: #ff9800; color: white; }
+    .btn-return:hover { background: #e68900; }
+  </style>
+</head>
+<body>
+  <h1>منوی کتابدار</h1>
+  <div class="menu-buttons">
+    <button class="btn btn-add">📚 افزودن کتاب</button>
+    <button class="btn btn-loan">📖 قرض دادن کتاب</button>
+    <button class="btn btn-return">🔄 پس گرفتن کتاب</button>
+  </div>
+</body>
+</html>

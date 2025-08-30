@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحه اصلی</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* منوی بالا */
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 15px 20px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .menu {
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* متن خوش‌آمد */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    /* دکمه‌ها */
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .btn-login {
+      border-color: #000;
+      color: #000;
+      background: #fff;
+    }
+
+    .btn-login:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .btn-register {
+      border-color: #e63946;
+      color: #e63946;
+      background: #fff;
+    }
+
+    .btn-register:hover {
+      background: #e63946;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="menu">⋮</div>
+  </header>
+
+  <main>
+    <h1>سلام! به کتابدار خوش آمدید</h1>
+    <div class="buttons">
+      <button class="btn btn-login">ورود</button>
+      <button class="btn btn-register">ثبت‌نام</button>
+    </div>
+  </main>
+</body>
+</html>
