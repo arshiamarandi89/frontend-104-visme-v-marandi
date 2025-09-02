@@ -1,97 +1,46 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>پس گرفتن کتاب</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Tahoma', sans-serif;
-      background: #fdfdfd;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding: 40px 20px;
-    }
-    h1 {
-      font-size: 26px;
-      margin-bottom: 30px;
-      color: #333;
-    }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      max-width: 700px;
-      margin-bottom: 30px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: center;
-      font-size: 15px;
-    }
-    th {
-      background-color: #ff9800;
-      color: white;
-    }
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    select, button {
-      padding: 10px 18px;
-      font-size: 16px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-    select {
-      margin-right: 10px;
-      outline: none;
-    }
-    button {
-      background: #ff9800;
-      color: white;
-      border: none;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #e68900;
-    }
-    .form-section {
-      margin-top: 20px;
-      display: flex;
-      align-items: center;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پس گرفتن کتاب</title>
+<style>
+body { margin:0; font-family:'Tahoma', sans-serif; background:#fdfdfd; display:flex; flex-direction:column; align-items:center; padding:40px 20px; min-height:100vh; }
+h1 { font-size:26px; margin-bottom:30px; color:#333; }
+table { border-collapse:collapse; width:100%; max-width:700px; margin-bottom:30px; }
+th, td { border:1px solid #ddd; padding:12px; text-align:center; font-size:15px; }
+th { background:#ff9800; color:white; }
+tr:nth-child(even) { background:#f9f9f9; }
+select, button { padding:10px 18px; font-size:16px; border-radius:6px; border:1px solid #ccc; }
+button { background:#ff9800; color:white; border:none; cursor:pointer; transition:0.3s; }
+button:hover { background:#e68900; }
+.form-section { margin-top:20px; display:flex; align-items:center; gap:10px; }
+</style>
 </head>
 <body>
-  <h1>🔄 پس گرفتن کتاب</h1>
-
-  <!-- جدول لیست کتاب‌های قرض داده شده -->
-  <table>
-    <thead>
-      <tr>
-        <th>📚 نام کتاب</th>
-        <th>👤 نام قرض‌گیرنده</th>
-        <th>📅 تاریخ بازگشت مجاز</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- این داده‌ها باید توسط بک‌اند تزریق شوند -->
-      {{rows}}
-    </tbody>
-  </table>
-
-  <!-- فرم انتخاب کتاب برای بازگرداندن -->
-  <form action="/return_book" method="post" class="form-section">
-    <label for="book">کتاب را انتخاب کنید:</label>
-    <select name="book" id="book" required>
-      {{options}}
-    </select>
-    <button type="submit">پس بگیر</button>
-  </form>
+<h1>🔄 پس گرفتن کتاب</h1>
+<table>
+  <thead>
+    <tr>
+      <th>📚 نام کتاب</th>
+      <th>👤 نام قرض‌گیرنده</th>
+      <th>📅 تاریخ بازگشت مجاز</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>کتاب 1</td><td>علی</td><td>2025-09-05</td></tr>
+    <tr><td>کتاب 2</td><td>سارا</td><td>2025-09-06</td></tr>
+    <tr><td>کتاب 3</td><td>مهدی</td><td>2025-09-07</td></tr>
+  </tbody>
+</table>
+<form action="menu.html" method="get" class="form-section">
+<label for="book">کتاب را انتخاب کنید:</label>
+<select name="book" id="book" required>
+  <option value="کتاب 1">کتاب 1</option>
+  <option value="کتاب 2">کتاب 2</option>
+  <option value="کتاب 3">کتاب 3</option>
+</select>
+<button type="submit">پس بگیر</button>
+</form>
 </body>
 </html>

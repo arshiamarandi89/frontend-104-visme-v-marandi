@@ -5,90 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ورود به سامانه</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Tahoma', sans-serif;
-      background: linear-gradient(135deg, #2196f3, #21cbf3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    .login-box {
-      background: #fff;
-      padding: 30px 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      width: 100%;
-      max-width: 380px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 22px;
-      margin-bottom: 20px;
-      color: #333;
-    }
-    label {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 14px;
-      text-align: right;
-      color: #444;
-    }
-    input {
-      width: 100%;
-      padding: 12px;
-      font-size: 15px;
-      border: 2px solid #ccc;
-      border-radius: 8px;
-      outline: none;
-      margin-bottom: 15px;
-      transition: 0.3s;
-    }
-    input:focus {
-      border-color: #2196f3;
-    }
-    button {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background: #2196f3;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #1976d2;
-    }
-    .extra {
-      margin-top: 15px;
-      font-size: 14px;
-    }
-    .extra a {
-      color: #2196f3;
-      text-decoration: none;
-    }
-    .extra a:hover {
-      text-decoration: underline;
-    }
+    body { margin:0; font-family:'Tahoma', sans-serif; background: linear-gradient(135deg, #2196f3, #21cbf3); display:flex; align-items:center; justify-content:center; height:100vh; }
+    .login-box { background:#fff; padding:30px 25px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2); width:100%; max-width:380px; text-align:center; }
+    h1 { font-size:22px; margin-bottom:20px; color:#333; }
+    label { display:block; margin-bottom:6px; font-size:14px; text-align:right; color:#444; }
+    input { width:100%; padding:12px; font-size:15px; border:2px solid #ccc; border-radius:8px; outline:none; margin-bottom:15px; transition:0.3s; }
+    input:focus { border-color:#2196f3; }
+    button { width:100%; padding:12px; font-size:16px; border:none; border-radius:8px; background:#2196f3; color:white; cursor:pointer; transition:0.3s; }
+    button:hover { background:#1976d2; }
+    .extra { margin-top:15px; font-size:14px; }
+    .extra a { color:#2196f3; text-decoration:none; }
+    .extra a:hover { text-decoration:underline; }
   </style>
 </head>
 <body>
   <div class="login-box">
     <h1>🔑 ورود به سامانه</h1>
-    <form action="/login" method="post">
+    <form action="menu.html" method="get">
       <label for="user_id">کد کاربری:</label>
       <input type="text" id="user_id" name="user_id" required>
-
       <label for="password">رمز عبور:</label>
       <input type="password" id="password" name="password" required>
-
       <button type="submit">ورود</button>
     </form>
     <div class="extra">
-      حساب کاربری ندارید؟ <a href="/register">ثبت‌نام کنید</a>
+      حساب کاربری ندارید؟ <a href="register.html">ثبت‌نام کنید</a>
     </div>
   </div>
 </body>
