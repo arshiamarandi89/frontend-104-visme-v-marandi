@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحه اصلی</title>
+  <style>
+    body { margin:0; font-family:'Tahoma', sans-serif; background:#f9f9f9; display:flex; flex-direction:column; height:100vh; justify-content:center; align-items:center; }
+    main { text-align:center; }
+    h1 { font-size:32px; color:#333; margin-bottom:40px; }
+    .buttons { display:flex; gap:20px; }
+    .btn { padding:12px 30px; font-size:18px; border-radius:8px; cursor:pointer; border:2px solid transparent; transition:all 0.3s; }
+    .btn-login { border-color:#000; color:#000; background:#fff; }
+    .btn-login:hover { background:#000; color:#fff; }
+    .btn-register { border-color:#e63946; color:#e63946; background:#fff; }
+    .btn-register:hover { background:#e63946; color:#fff; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>سلام! به کتابدار خوش آمدید</h1>
+    <div class="buttons">
+      <a href="login.html"><button class="btn btn-login">ورود</button></a>
+      <a href="register.html"><button class="btn btn-register">ثبت‌نام</button></a>
+    </div>
+  </main>
+</body>
+</html>
